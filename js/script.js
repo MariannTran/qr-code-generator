@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const wrapper = document.querySelector(".wrapper");
 const qrInput = wrapper.querySelector(".form input");
 const generateBtn = wrapper.querySelector(".form button");
@@ -17,5 +18,31 @@ generateBtn.addEventListener("click", () => {
 qrInput.addEventListener("keyup", () => {
     if(!qrInput.value) {
         wrapper.classList.remove("active");
+=======
+document.addEventListener("DOMContentLoaded", function() {
+    const qrCodeForm = document.getElementById("qrCodeForm");
+    const qrCodeInput = document.getElementById("qrCodeInput");
+    const qrCodeOutput = document.getElementById("qrCodeOutput");
+
+    qrCodeForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const qrCodeValue = qrCodeInput.value;
+
+        if (qrCodeValue) {
+            generateQRCode(qrCodeValue);
+        }
+    });
+
+    function generateQRCode(value) {
+        qrCodeOutput.innerHTML = ""; // Clear previous QR code
+        const qrCode = new QRCode(qrCodeOutput, {
+            text: value,
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+>>>>>>> 8ba6f2314ec6a3c8bff358f3de1a24ae8f4c7e72
     }
 });
