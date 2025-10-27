@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,14 +13,22 @@
             <p>Paste a URL or text to create a QR code</p>
         </header>
         <div class="form">
-            <input type="text" placeholder="Enter text or URL">
-            <button>Generate QR Code</button>
+            <div class="input-group">
+                <input type="text" id="qr-input" placeholder="Enter text or URL">
+                <button class="paste-btn" title="Paste from clipboard">
+                    Paste
+                </button>
+            </div>
+            <button class="generate-btn">
+                <span class="default-text">Generate QR Code</span>
+                <span class="loading-text">Generating...</span>
+            </button>
         </div>
         <div class="qr-code">
             <img src="" alt="qr-code">
+            <button class="download-btn">Download QR Code</button>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
