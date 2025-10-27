@@ -1,0 +1,10 @@
+* [33mc189aa4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Audit: fix UI and complete script
+* [33m7e0d515[m Remove nested repo from tracking
+* [33mfd8dcff[m Enhance UX with interactive features and animations
+* [33m5d26e38[m Improve UI design with modern styling
+* [33m9a53eac[m Fix merge conflict in index.html
+*   [33m4d93981[m Merge remote changes and add QR code generator
+[32m|[m[33m\[m  
+[32m|[m * [33m8ba6f23[m Move files to root directory
+[32m|[m * [33m3d1cc44[m First commit
+* [33ma1bbde0[m Initial setup: QR code generator
